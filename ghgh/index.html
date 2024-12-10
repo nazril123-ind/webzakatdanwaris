@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perhitungan Zakat dan Waris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Perhitungan Zakat dan Waris</h1>
+
+    <!-- Zakat Fitrah -->
+    <section id="zakatFitrah">
+      <h2>Zakat Fitrah</h2>
+      <label for="jumlahOrang">Jumlah Orang yang Zakat:</label>
+      <input type="number" id="jumlahOrang" placeholder="Jumlah Orang">
+      <button onclick="hitungZakatFitrah()">Hitung Zakat Fitrah</button>
+      <p id="hasilFitrah"></p>
+    </section>
+
+    <!-- Zakat Harta -->
+    <section id="zakatHarta">
+      <h2>Zakat Harta</h2>
+      <label for="harta">Jumlah Harta:</label>
+      <input type="text" id="harta" placeholder="Jumlah Harta (Rp)">
+      <button onclick="hitungZakatHarta()">Hitung Zakat Harta</button>
+      <p id="hasilHarta"></p>
+    </section>
+
+    <!-- Zakat Penghasilan -->
+    <section id="zakatPenghasilan">
+      <h2>Zakat Penghasilan</h2>
+      <label for="penghasilan">Jumlah Penghasilan Bulanan:</label>
+      <input type="text" id="penghasilan" placeholder="Penghasilan Bulanan (Rp)">
+      <button onclick="hitungZakatPenghasilan()">Hitung Zakat Penghasilan</button>
+      <p id="hasilPenghasilan"></p>
+    </section>
+
+    <!-- Pembagian Waris -->
+    <section id="pembagianWaris">
+      <h2>Pembagian Waris</h2>
+      <label for="warisan">Jumlah Warisan (Rp):</label>
+      <input type="text" id="warisan" placeholder="Jumlah Warisan">
+      
+      <label for="anakLakiLaki">Jumlah Anak Laki-laki:</label>
+      <input type="number" id="anakLakiLaki" placeholder="Jumlah Anak Laki-laki">
+      
+      <label for="anakPerempuan">Jumlah Anak Perempuan:</label>
+      <input type="number" id="anakPerempuan" placeholder="Jumlah Anak Perempuan">
+      
+      <button onclick="hitungWaris()">Hitung Pembagian Waris</button>
+      
+      <p id="hasilWaris"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
